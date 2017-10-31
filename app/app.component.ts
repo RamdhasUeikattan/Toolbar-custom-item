@@ -31,7 +31,7 @@ export class AppComponent implements OnInit {
     @ViewChild('template')
     public rowCount;
     @ViewChild('template1')
-    public refresh;
+    public print;
     public editSetting: Object;
     public validationRules;
     public toolbarItems: (ToolbarItems | ItemModel)[];
@@ -40,7 +40,7 @@ export class AppComponent implements OnInit {
 
     ngOnInit(): void {
         this.data = gridData1;
-        this.toolbarItems = ['add', 'delete', 'cancel', 'update', 'edit', {template: this.rowCount}, {template: this.refresh}];
+        this.toolbarItems = ['add', 'delete', 'cancel', 'update', 'edit', {template: this.rowCount}, {template: this.print}];
         this.validationRules= {required:true};
         this.editSetting= {allowEditing: true, allowDeleting: true, allowAdding: true};
     }
