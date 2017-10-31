@@ -44,7 +44,8 @@ export class AppComponent implements OnInit {
         this.validationRules= {required:true};
         this.editSetting= {allowEditing: true, allowDeleting: true, allowAdding: true};
     }
-    tClick(){
+    tClick(args){
+        console.log(args);
         // todo handlers code
     }
     dataBoundHandler() {
