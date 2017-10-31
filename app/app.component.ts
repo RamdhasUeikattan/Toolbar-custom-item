@@ -45,7 +45,7 @@ export class AppComponent implements OnInit {
         this.editSetting= {allowEditing: true, allowDeleting: true, allowAdding: true};
     }
     tClick(){
-        this.grid.print();
+        // todo handlers code
     }
     dataBoundHandler() {
       // update data count
